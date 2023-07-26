@@ -1,0 +1,73 @@
+:root {
+  font-size: 62.5%;
+}
+:root img {
+  width: 10rem;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+  #top-nav .container {
+    align-items: center;
+  }
+  #top-nav .container .show-menu {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  #top-nav .container .show-menu ul li {
+    display: inline;
+    margin: 0 3rem;
+  }
+  #top-nav .container .show-menu .SA-icon a img {
+    width: 15rem;
+    height: auto;
+  }
+  #top-nav .container .show-menu .main-menu {
+    flex-basis: auto;
+    text-align: center;
+  }
+  #top-nav .container .show-menu .main-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #top-nav .container .show-menu .main-menu ul li {
+    width: 25%;
+  }
+  #top-nav .container .show-menu .login-menu a {
+    font-size: 1rem;
+    color: #000;
+  }
+  #top-nav .container .show-menu .login-menu ul {
+    display: inline;
+  }
+  #top-nav .container .show-menu .login-menu ul li {
+    margin: 0 1rem;
+    position: relative;
+  }
+  #top-nav .container .show-menu .login-menu ul li:first-child:before {
+    width: 0;
+    height: 0;
+  }
+  #top-nav .container .show-menu .login-menu ul li:before {
+    content: "";
+    width: 1px;
+    height: 1.5rem;
+    background: #ccc;
+    position: absolute;
+    left: -1rem;
+    top: 0.5rem;
+  }
+  #top-nav .container .hidden-menu {
+    display: none;
+    background-color: #ccc;
+    height: 10rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+// 576미만 : 스마트폰 세로, 576~767 : 스마트폰 가로, 768~991 : 태블릿, 992~ : 데스크탑
+$tablet: 576px;
+$tablet: 768px;
+$desktop: 992px;
+
+$blue-color: rgb(38, 38, 255);
+:root {
+  font-size: 62.5%; //10px
+  img {
+    width: 10rem;
+  }
+}
+
+// 992이상 : 데스크탑 화면
+@media (min-width: $desktop) {
+  .container {
+    width: $desktop;
+  }
+
+  #top-nav .container {
+    align-items: center;
+    .show-menu {
+      width: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      align-items: center;
+      ul li {
+        display: inline;
+        margin: 0 3rem;
+      }
+
+      .SA-icon {
+        a img {
+          width: 15rem;
+          height: auto;
+        }
+      }
+
+      .main-menu {
+        flex-basis: auto;
+        text-align: center;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          li {
+            width: 25%;
+          }
+        }
+      }
+
+      .login-menu {
+        a {
+          font-size: 1rem;
+          color: #000;
+        }
+        ul {
+          display: inline;
+          li {
+            margin: 0 1rem;
+            position: relative;
+          }
+          li:first-child:before {
+            width: 0;
+            height: 0;
+          }
+          li:before {
+            content: "";
+            width: 1px;
+            height: 1.5rem;
+            background: #ccc;
+            position: absolute;
+            left: -1rem;
+            top: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .hidden-menu {
+      display: none;
+      background-color: #ccc;
+      height: 10rem;
+    }
+  }
+}
