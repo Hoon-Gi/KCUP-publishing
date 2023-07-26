@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+$blue-color: rgb(38, 38, 255);
+html {
+  font-size: 10px;
+}
+div {
+  margin: 10px;
+}
+
+#wrap {
+  width: 100%;
+}
+#wrap div {
+  display: block;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  height: inherit;
+  background: inherit;
+}
+
+/* 상단메뉴바 */
+#top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15vh;
+  background-color: #fff;
+}
+#top-nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+#top-nav .container div {
+  margin: auto 0;
+}
+#top-nav .SA-icon img {
+  width: 0.5em;
+  height: auto;
+}
+
+#top-nav ul li {
+  float: left;
+  margin: 15px;
+}
+#top-nav .main-menu {
+  overflow: hidden;
+  font-size: 2rem;
+}
+#top-nav .main-menu li a {
+  color: $blue-color;
+  font-weight: bold;
+}
+#top-nav .login-menu {
+  font-size: 14px;
+}
+
+/* //상단메뉴바 */
+
+/* 헤더 */
+#header {
+  width: 100%;
+  height: 600px;
+}
+#header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#header .hd-text {
+  margin: 25% 0;
+}
+#header .hd-text span {
+  color: $blue-color;
+  font-size: 20px;
+}
+#header .hd-text h1 {
+  color: $blue-color;
+  font-size: 50px;
+  margin: 10px 0;
+}
+#header .hd-text .round-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  color: $blue-color;
+  background-color: #fff;
+  border: 2px solid $blue-color;
+  border-radius: 40px;
+}
+#header .hd-text .round-btn:hover {
+  color: #fff;
+  background-color: $blue-color;
+}
+#header .hd-img {
+  float: right;
+  margin: 15% 5%;
+  margin-right: 20px;
+}
+#header img {
+  width: 400px;
+  height: auto;
+}
+/* //헤더 */
+
+/* 메인콘텐츠 */
+#content {
+  background-color: $blue-color;
+  width: 100%;
+  height: 1000px;
+}
+#content .container div {
+  width: 100%;
+  border: 1px solid #000;
+}
+#content .cont1 {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-basis: auto;
+}
+/* #content .cont1 div {
+  height: inherit;
+} */
+.cont1 .cont1_text {
+}
+.cont1 .cont1_text h1 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.cont1 .cont1_text span {
+  color: #fff;
+  font-size: 20px;
+}
+#footer {
+  margin-top: 1rem;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    li {
+      img {
+        overflow: hidden;
+        object-fit: fill;
+        width: 50%;
+      }
+    }
+  }
+}
